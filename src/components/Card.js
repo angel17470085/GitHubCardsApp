@@ -3,10 +3,10 @@ class Card extends React.Component {
   render() {
     return (
       <div className="github-profile">
-        <img src="https://place-hold.it/75" />
+        <img src={this.props.avatar_url}/>
         <div className="info">
-          <div className="name">Aquí irá el nombre</div>
-          <div className="company">Aquí irá la organización</div>
+          <div className="name">{this.props.name}</div>
+          <div className="company">{this.props.company}</div>
         </div>
       </div>
     );
